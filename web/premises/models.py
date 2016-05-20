@@ -215,11 +215,17 @@ class Contention(DeletePreventionMixin, models.Model):
         return round(sign * order + seconds / 45000, 7)
 
     def get_full_url(self):
-        return "http://%(language)s.%(domain)s%(path)s" % {
-            "language": self.language,
-            "domain": settings.BASE_DOMAIN,
-            "path": self.get_absolute_url()
-        }
+        if not settings.PREVENT_LANGUAGE_REDIRECTION:
+            return "http://%(language)s.%(domain)s%(path)s" % {
+                "language": self.language,
+                "domain": settings.BASE_DOMAIN,
+                "path": self.get_absolute_url()
+            }
+        else:
+            return "http://%(domain)s%(path)s" % {
+                "domain": settings.BASE_DOMAIN,
+                "path": self.get_absolute_url()
+            }
 
     def save(self, *args, **kwargs):
         """
