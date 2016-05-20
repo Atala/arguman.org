@@ -105,14 +105,15 @@ REDIRECTED_PATHS = (
     '/new-argument'
 )
 
-DEFAULT_LANGUAGE = 'en'
+DEFAULT_LANGUAGE = 'fr'
 
 BASE_DOMAIN = 'arguman.org'
 
 AVAILABLE_LANGUAGES = (
     'tr',
     'en',
-    'ch'
+    'ch',
+    'fr'
 )
 
 LANGUAGE_CODE_MAPPING = {
@@ -260,3 +261,9 @@ try:
     from settings_local import *
 except ImportError:
     print "settings_local.py not found!"
+
+
+try:
+    from settings_debout import *
+except ImportError:
+    print "settings_debout.py not found!"
