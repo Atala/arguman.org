@@ -89,10 +89,11 @@ class ContentionDetailView(DetailView):
             **kwargs)
 
     def get(self, request, *args, **kwargs):
+
         self.object = self.get_object()
         host = request.META['HTTP_HOST']
 
-        if not host.startswith(settings.AVAILABLE_LANGUAGES):
+        if not host.startswith(settings.AVAILABLE_LANGUAGES) and not settings.PREVENT_LANGUAGE_REDIRECTION:
             return redirect(self.object.get_full_url(), permanent=True)
 
         if not normalize_language_code(get_language()) == self.object.language:
