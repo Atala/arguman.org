@@ -262,8 +262,13 @@ try:
 except ImportError:
     print "settings_local.py not found!"
 
-
-try:
-    from settings_debout_dev import *
-except ImportError:
-    print "settings_debout.py not found!"
+if os.getenv('ARGUMAN_PROD', False):
+    try:
+        from settings_debout_prod import *
+    except ImportError:
+        print "settings_debout_prod.py not found!"
+else:
+    try:
+        from settings_debout_dev import *
+    except ImportError:
+        print "settings_debout_dev.py not found!"
