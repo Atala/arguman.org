@@ -48,16 +48,6 @@ INSTALLED_APPS = (
     'api',
 )
 
-MIDDLEWARE_CLASSES = (
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'i18n.middleware.MultipleProxyMiddleware'
-)
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
