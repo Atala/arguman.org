@@ -7,3 +7,7 @@ SECRET_KEY = os.getenv('ARGUMAN_SECRET_KEY')
 DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
+
+BASE_DOMAIN = 'arguman.nuitdebout.fr'
+SITE_URL = "arguman.nuitdebout.fr"
+BLOG_URL = "arguman.nuitdebout.fr/blog"
