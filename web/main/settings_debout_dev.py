@@ -13,7 +13,7 @@ from datetime import timedelta
 SECRET_KEY = os.getenv('ARGUMAN_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -62,7 +62,7 @@ PREVENT_LANGUAGE_REDIRECTION = True
 
 DEFAULT_LANGUAGE = 'fr'
 
-BASE_DOMAIN = 'arguman.nuitdebout.fr'
+BASE_DOMAIN = 'localhost'
 
 AVAILABLE_LANGUAGES = (
     'fr'
@@ -94,7 +94,7 @@ LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_FROM_EMAIL = 'alois.guillope@gmail.com'
 
-SITE_URL = "arguman.org"
+SITE_URL = "localhost"
 
 # Markitup Settings
 MARKITUP_SET = 'markitup/sets/markdown'

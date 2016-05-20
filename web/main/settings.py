@@ -264,6 +264,6 @@ except ImportError:
 
 
 try:
-    from settings_debout import *
+    from settings_debout_dev import *
 except ImportError:
     print "settings_debout.py not found!"
