@@ -9,9 +9,6 @@ from datetime import timedelta
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('ARGUMAN_SECRET_KEY')
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -34,7 +31,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'django.contrib.sitemaps',
-
+    'django_extensions',
     'typogrify',
     'social_auth',
     'django_gravatar',
@@ -62,7 +59,7 @@ PREVENT_LANGUAGE_REDIRECTION = True
 
 DEFAULT_LANGUAGE = 'fr'
 
-BASE_DOMAIN = 'localhost'
+BASE_DOMAIN = 'localhost:8000'
 
 AVAILABLE_LANGUAGES = (
     'fr'
@@ -94,7 +91,7 @@ LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_FROM_EMAIL = 'alois.guillope@gmail.com'
 
-SITE_URL = "localhost"
+SITE_URL = "localhost:8000"
 
 # Markitup Settings
 MARKITUP_SET = 'markitup/sets/markdown'
@@ -102,7 +99,7 @@ MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
 
 BLOG_FEED_TITLE = "Arguman Nuit Debout"
 BLOG_FEED_DESCRIPTION = "Plateforme de débats analytiques"
-BLOG_URL = "http://arguman.nuitdebout.fr/blog"
+BLOG_URL = "localhost:8000/blog"
 
 LOGGING = {
     'version': 1,
