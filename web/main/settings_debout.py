@@ -78,7 +78,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/assets/'
-STATIC_ROOT = '/assets/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
 
 # Social Auth Settings
 AUTHENTICATION_BACKENDS = (
