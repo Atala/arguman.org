@@ -59,7 +59,7 @@ msgstr "tout(e)"
 
 #: premises/forms.py:33
 msgid "You should write a premise or link an argument."
-msgstr "Vous devriez écrire une prémisse ou lier un argument."
+msgstr "Vous devriez écrire un argument ou lier un argument."
 
 #: premises/models.py:40 templates/premises/contention.html:6
 #: templates/premises/contention_list.html:13 templates/premises/thread.html:31
@@ -189,16 +189,16 @@ msgid ""
 "The parent of premise. If you don't choose anything, it will be a main "
 "premise."
 msgstr ""
-"La prémisse parente. Si vous n'en choisissez pas, la prémisse sera "
-"créée à la racine."
+"L'argument parent. Si vous n'en choisissez pas, l'argument sera "
+"créé à la racine."
 
 #: premises/models.py:465
 msgid "Premise Type"
-msgstr "Type de prémisse"
+msgstr "Type d'argument"
 
 #: premises/models.py:469
 msgid "Premise Content"
-msgstr "Contenu de la prémisse"
+msgstr "Contenu de l'argument"
 
 #: premises/models.py:477
 msgid "Related Argument"
@@ -206,7 +206,7 @@ msgstr "Argument lié"
 
 #: premises/models.py:478
 msgid "You can also associate your premise with an argument."
-msgstr "Vous pouvez aussi lier votre prémisse à un argument."
+msgstr "Vous pouvez aussi lier votre argument à une thèse."
 
 #: premises/models.py:704
 msgid "Reason"
@@ -214,7 +214,7 @@ msgstr "Raison"
 
 #: premises/models.py:705
 msgid "Please explain that why the premise is a fallacy."
-msgstr "Veuillez expliquer pourquoi cette prémisse est un sophisme."
+msgstr "Veuillez expliquer pourquoi cet argument est un sophisme."
 
 #: premises/models.py:707
 msgid "Fallacy Type"
@@ -368,7 +368,7 @@ msgstr "Arguments"
 
 #: templates/auth/profile.html:55
 msgid "Premises"
-msgstr "Prémisses"
+msgstr "Arguments"
 
 #: templates/auth/profile.html:56
 msgid "Fallacy Reports"
@@ -396,7 +396,7 @@ msgstr "Utilisateurs les plus contestés"
 
 #: templates/auth/profile.html:107
 msgid "Most supported premises"
-msgstr "Prémisses les plus plébiscitées"
+msgstr "Arguments les plus plébiscitées"
 
 #: templates/auth/register.html:7 templates/auth/register.html.py:17
 msgid "Register"
@@ -532,7 +532,7 @@ msgstr "a créé une thèse&nbsp;:"
 #: templates/newsfeed/fallacy.html:4
 #, python-format
 msgid "reported <strong>%(fallacy)s</strong> for a premise."
-msgstr "a rapporté un <strong>%(fallacy)s</strong> pour une prémisse."
+msgstr "a rapporté un <strong>%(fallacy)s</strong> pour un argument."
 
 #: templates/newsfeed/following.html:3
 #, python-format
@@ -554,14 +554,14 @@ msgstr "Notifications"
 #, python-format
 msgid "added a <span class=\"premise-type %(class)s\">%(label)s</span> premise"
 msgstr ""
-"a ajouté une <span class=\"premise-type %(class)s\">%(label)s</span> prémisse"
+"a ajouté un argument <span class=\"premise-type %(class)s\">%(label)s</span>"
 
 #: templates/notifications/added-premise-for-premise.html:6
 #, python-format
 msgid ""
 "added a <span class=\"premise-type %(class)s\">%(label)s</span> premise for"
 msgstr ""
-"a ajouté <span class=\"premise-type %(class)s\">%(label)s</span> prémisse pour"
+"a ajouté un argument <span class=\"premise-type %(class)s\">%(label)s</span> pour"
 
 #: templates/notifications/followed.html:2
 msgid "is following you."
@@ -570,11 +570,11 @@ msgstr "vous suit."
 #: templates/notifications/reported-as-fallacy.html:4
 #, python-format
 msgid "Your premise reported as <strong>%(label)s</strong>"
-msgstr "Votre prémisse a été évaluée comme <strong>%(label)s</strong>."
+msgstr "Votre argument a été évalué comme <strong>%(label)s</strong>."
 
 #: templates/notifications/supported-a-premise.html:6
 msgid "supported your premise"
-msgstr "a soutenu votre prémisse"
+msgstr "a soutenu votre argument"
 
 #: templates/nouns/channel_detail.html:15
 msgid "Regular users"
@@ -639,7 +639,7 @@ msgstr "Voir tout"
 #: templates/premises/premise.html:90 templates/premises/thread.html:105
 #: templates/premises/tree_view.html:26
 msgid "add premise"
-msgstr "ajouter une prémisse"
+msgstr "ajouter un argument"
 
 #: templates/premises/actions.html:7 templates/premises/premise.html:96
 #: templates/premises/thread.html:97
@@ -719,7 +719,7 @@ msgstr "Supprimer la thèse"
 
 #: templates/premises/edit_premise.html:7
 msgid "Edit Premise"
-msgstr "Éditer la prémisse"
+msgstr "Éditer l'argument"
 
 #: templates/premises/examples/contention.html:2
 msgid ""
@@ -728,8 +728,8 @@ msgid ""
 "society, not for profit</li> <li>The meaning of life is 42</li> <li>Ethics "
 "man did what had to be done</li> </ul>"
 msgstr ""
-"L'affirmation principale. Elle sera contestable par des prémisses. "
-"Les prémisses.<br> Exemples&nbsp;:<ul><li>L'art véritable est social, pas marchand."
+"L'affirmation principale. Elle sera contestable par des arguments. "
+"Les arguments.<br> Exemples&nbsp;:<ul><li>L'art véritable est social, pas marchand."
 "</li><li>42 est le sens de la vie.</li><li>Etre éthique c'est faire ce que "
 "l'on à faire.</li></ul>"
 
@@ -770,7 +770,7 @@ msgid ""
 "contention. </li> <li> because: A reason for proof the contention. </li> "
 "<li> however: An additional situation for the premise. </li> </ul>"
 msgstr ""
-"Le type de prémisse. Cela pourrait être&nbsp;:<ul>\t<li>mais&nbsp;: "
+"Le type d'argument. Cela pourrait être&nbsp;:<ul>\t<li>mais&nbsp;: "
 "Une objection à la thèse.</li>\t<li>parce que: Une cause qui implique "
 "la thèse.</li>\t<li>cependant&nbsp;: Une précision apportée à la thèse.</li></ul>"
 
@@ -792,7 +792,7 @@ msgstr "Sauver et continuer l'édition"
 
 #: templates/premises/new_premise.html:9
 msgid "The parent premise:"
-msgstr "La prémisse parente&nbsp;:"
+msgstr "L'argument parent parente&nbsp;:"
 
 #: templates/premises/new_premise.html:29
 msgid "Characters remaining: "
@@ -837,7 +837,7 @@ msgstr "modification"
 
 #: templates/premises/premise.html:97 templates/premises/thread.html:98
 msgid "Are you sure to remove this premise?"
-msgstr "Êtes vous sur de vouloir supprimer cette prémisse&nbsp;?"
+msgstr "Êtes vous sur de vouloir supprimer cet argument&nbsp;?"
 
 #: templates/premises/premise.html:105 templates/premises/premise.html:111
 #: templates/premises/premise.html:113 templates/premises/thread.html:119
@@ -850,7 +850,7 @@ msgstr "signaler un sophisme"
 
 #: templates/premises/report.html:7
 msgid "The premise:"
-msgstr "La prémisse&nbsp;:"
+msgstr "L'argument&nbsp;:"
 
 #: templates/premises/report.html:13
 msgid "Report Fallacy"
@@ -878,7 +878,7 @@ msgstr "La thèse n'a pas été discutée."
 
 #: templates/premises/tree_view.html:41
 msgid "Add a premise"
-msgstr "Ajouter une prémisse"
+msgstr "Ajouter un argument"
 
 #: templates/premises/tree_view.html:44
 msgid "Edit argument"
@@ -942,7 +942,7 @@ msgstr "utilisateurs"
 
 #: templates/search/search.html:20
 msgid "premises"
-msgstr "prémisses"
+msgstr "arguments"
 
 #: templates/stats.html:6 templates/tabs.html:13
 msgid "Statistics"
@@ -962,11 +962,11 @@ msgstr "thèses les plus disputées"
 
 #: templates/stats.html:12
 msgid "most supported premises"
-msgstr "prémisses les plus supportées"
+msgstr "arguments les plus supportés"
 
 #: templates/stats.html:13
 msgid "most fallacy premises"
-msgstr "prémisses les plus contestées"
+msgstr "arguments les plus contestés"
 
 #: templates/stats.html:18
 msgid "this week"
@@ -1011,8 +1011,8 @@ msgstr "Nouveau"
 #~ "added a <span class=\"premise-type %(class)s\">%(label)s</span> premise "
 #~ "for a premise"
 #~ msgstr ""
-#~ "a ajouté une <span class=\"premise-type %(class)s\">"
-#~ "%(label)s</span> prémisse pour une prémisse"
+#~ "a ajouté un <span class=\"premise-type %(class)s\">"
+#~ "%(label)s</span> argument pour un argument"
 
 #~ msgid "You have no new notifications."
 #~ msgstr "Pas de nouvelle notification."
